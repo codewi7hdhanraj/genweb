@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Free Consultation | GS Security Solutions</title>
+    <meta name="description" content="Get in touch with GS Security Solutions. Request a free on-site security survey and CCTV quotation from Umesh Suresh Bhavsar's expert engineering team.">
+    
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- System Status Ticker -->
+    <div class="system-status-ticker">
+        <div class="container ticker-container">
+            <div class="ticker-left">
+                <span class="ticker-item"><span class="radar-blink"></span> <strong>SYSTEM ONLINE</strong></span>
+                <span class="ticker-item"><i class="fa-solid fa-video text-red"></i> 15,480+ Active Cameras</span>
+                <span class="ticker-item"><i class="fa-solid fa-server text-green"></i> Cloud Ping: 12ms</span>
+                <span class="ticker-item" id="ticker-live-time">12:00:00 IST</span>
+            </div>
+            <div class="ticker-right">
+                <a href="tel:+919822445566" class="ticker-action-btn ticker-emergency-link"><i class="fa-solid fa-phone"></i> 24/7 Helpline: +91 98224 45566</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="logo-text">GS <span class="text-red">SECURITY</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="founder.html" class="nav-link">Founder</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="why-choose-us.html" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="gs-app.html" class="nav-link">GS App</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="gs-app.html" class="btn btn-primary btn-sm btn-header-app">
+                    <i class="fa-solid fa-download"></i> <span>Download App</span>
+                </a>
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Banner -->
+    <section class="page-banner">
+        <div class="page-banner-glow"></div>
+        <div class="page-banner-grid"></div>
+        <div class="container">
+            <div class="breadcrumb-trail">
+                <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="current">Contact Us</span>
+            </div>
+            <h1 class="page-banner-title">Schedule a Consultation Today</h1>
+            <p class="page-banner-subtitle">Our executive engineering team will analyze your architectural blueprints and design a tailored surveillance network matching your budget.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Contact Grid Section -->
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="grid grid-2col items-start gap-4">
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card animate-on-scroll">
+                        <h3>Send a Consultation Request</h3>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">Fill out your property details below. An engineer will call you back within 2-3 hours.</p>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="c_name">Full Name *</label>
+                                    <input type="text" id="c_name" required placeholder="John Doe">
+                                    <span class="error-msg" id="name-error">Please enter your name.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="c_phone">Phone Number *</label>
+                                    <input type="tel" id="c_phone" required placeholder="+91 98224 45566">
+                                    <span class="error-msg" id="phone-error">Please enter a valid phone number.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c_email">Email Address *</label>
+                                <input type="email" id="c_email" required placeholder="johndoe@email.com">
+                                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c_service">Interested Service</label>
+                                <select id="c_service">
+                                    <option value="cctv_install">CCTV Camera Installation</option>
+                                    <option value="wireless">Wireless CCTV Systems</option>
+                                    <option value="home">Home Security Solutions</option>
+                                    <option value="business">Business Surveillance Systems</option>
+                                    <option value="maintenance">Maintenance & AMC Support</option>
+                                    <option value="other">Other Security Solutions</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c_message">Message / Scope Description *</label>
+                                <textarea id="c_message" required rows="4" placeholder="Briefly describe your home, shop, or factory structure..."></textarea>
+                                <span class="error-msg" id="message-error">Please write a short description of your request.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-submit" id="formSubmitBtn">
+                                Send Consultation Request <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <div class="form-success-alert" id="formSuccessAlert">
+                            <i class="fa-solid fa-circle-check success-icon"></i>
+                            <div>
+                                <h4>Request Submitted Successfully!</h4>
+                                <p>Thank you for contacting GS Security Solutions. A technical representative will call you back within 2-3 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details & Map Grid -->
+                    <div class="contact-info-panel animate-on-scroll">
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-text">
+                                    <h4>Call Us Directly</h4>
+                                    <p><a href="tel:+919822445566">+91 98224 45566 (Direct Helpline)</a></p>
+                                    <p><a href="tel:+912225678900">+91 22 2567 8900 (Office Desk)</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <h4>Send an Email</h4>
+                                    <p><a href="mailto:info@gssecuritysolutions.com">info@gssecuritysolutions.com</a></p>
+                                    <p><a href="mailto:support@gssecuritysolutions.com">support@gssecuritysolutions.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-text">
+                                    <h4>Main Office Headquarters</h4>
+                                    <p>Plot 42, GS Tower, Bhavsar Road, Nashik, Maharashtra, India - 422001</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="detail-text">
+                                    <h4>Working Hours</h4>
+                                    <p>24/7 Technical Dispatch & Alarm Response Team</p>
+                                    <p>Mon - Sat: 9:00 AM - 8:00 PM (Office Visits)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Mockup/Simulation -->
+                        <div class="map-container">
+                            <div class="map-header">
+                                <i class="fa-solid fa-map-location-dot text-red"></i>
+                                <span>GS HEADQUARTERS MAP AREA</span>
+                            </div>
+                            <div class="simulated-map">
+                                <div class="map-radar"></div>
+                                <div class="map-grid-lines"></div>
+                                <div class="map-pin">
+                                    <div class="pin-pulse"></div>
+                                    <i class="fa-solid fa-location-dot pin-icon text-red"></i>
+                                </div>
+                                <div class="map-card-popup">
+                                    <strong>GS Security Solutions HQ</strong>
+                                    <span>Bhavsar Road, Nashik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="../index.html" class="logo mb-4">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span class="logo-text">GS <span class="text-red">SECURITY</span></span>
+                </a>
+                <p class="footer-text">Premium CCTV surveillance systems, custom security setups, wireless monitoring devices, and enterprise-grade hardware installations. Founded by Umesh Suresh Bhavsar.</p>
+                <div class="social-icons">
+                    <a href="#social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#social" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Pages</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Company</a></li>
+                    <li><a href="founder.html">Our Founder</a></li>
+                    <li><a href="services.html">Services & Packages</a></li>
+                    <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Our Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">CCTV Camera Installation</a></li>
+                    <li><a href="services.html">Wireless CCTV Systems</a></li>
+                    <li><a href="services.html">Home Security Solutions</a></li>
+                    <li><a href="services.html">Business Surveillance</a></li>
+                    <li><a href="services.html">DVR & NVR Calibration</a></li>
+                    <li><a href="services.html">Maintenance & AMC Contracts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">GS Mobile App</h4>
+                <p class="footer-text mb-3">Download the GS Mobile App to access live surveillance dashboards, trigger security alerts, and track support tickets directly.</p>
+                <a href="gs-app.html" class="btn btn-primary btn-sm btn-block">
+                    <i class="fa-solid fa-download"></i> Download GS App
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">Copyright &copy; 2026 GS Security Solutions. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#terms">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Live Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle-btn" id="chatToggleBtn" aria-label="Open chat support">
+            <i class="fa-solid fa-comments comment-icon"></i>
+            <i class="fa-solid fa-xmark close-icon"></i>
+            <span class="chat-notification-badge" id="chatBadge">1</span>
+        </button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-box-header">
+                <div class="cb-avatar"><i class="fa-solid fa-headset"></i></div>
+                <div class="cb-info">
+                    <div class="cb-name">GS Security Assistant</div>
+                    <div class="cb-status"><span class="chat-green-dot"></span> Online (We respond instantly)</div>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message msg-bot">
+                    Hello! Welcome to our Contact desk. Need immediate technical dispatch or an inspector site assessment?
+                </div>
+            </div>
+            <div class="chat-quick-replies" id="chatQuickReplies">
+                <button class="qr-btn" data-reply="CCTV Installation Pricing">CCTV Installation Pricing</button>
+                <button class="qr-btn" data-reply="Talk to Umesh Bhavsar">Talk to Umesh Bhavsar</button>
+                <button class="qr-btn" data-reply="Download the GS App">Download the GS App</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="chatSendBtn" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="../app.js"></script>
+</body>
+</html>

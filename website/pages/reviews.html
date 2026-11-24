@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews & Testimonials | GS Security Solutions</title>
+    <meta name="description" content="Read authentic reviews and ratings from homeowners, retail owners, and industrial managers who trust GS Security Solutions for 24/7 CCTV surveillance.">
+    
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- System Status Ticker -->
+    <div class="system-status-ticker">
+        <div class="container ticker-container">
+            <div class="ticker-left">
+                <span class="ticker-item"><span class="radar-blink"></span> <strong>SYSTEM ONLINE</strong></span>
+                <span class="ticker-item"><i class="fa-solid fa-video text-red"></i> 15,480+ Active Cameras</span>
+                <span class="ticker-item"><i class="fa-solid fa-server text-green"></i> Cloud Ping: 12ms</span>
+                <span class="ticker-item" id="ticker-live-time">12:00:00 IST</span>
+            </div>
+            <div class="ticker-right">
+                <a href="tel:+919822445566" class="ticker-action-btn ticker-emergency-link"><i class="fa-solid fa-phone"></i> 24/7 Helpline: +91 98224 45566</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="logo-text">GS <span class="text-red">SECURITY</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="founder.html" class="nav-link">Founder</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="why-choose-us.html" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="gs-app.html" class="nav-link">GS App</a></li>
+                    <li><a href="reviews.html" class="nav-link active">Reviews</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="gs-app.html" class="btn btn-primary btn-sm btn-header-app">
+                    <i class="fa-solid fa-download"></i> <span>Download App</span>
+                </a>
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Banner -->
+    <section class="page-banner">
+        <div class="page-banner-glow"></div>
+        <div class="page-banner-grid"></div>
+        <div class="container">
+            <div class="breadcrumb-trail">
+                <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="current">Customer Reviews</span>
+            </div>
+            <h1 class="page-banner-title">Trusted by Thousands of Clients</h1>
+            <p class="page-banner-subtitle">Read firsthand experiences from homeowners and corporate administrators protected under GS Security Solutions surveillance networks.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Rating Overview Bar -->
+        <section class="section-padding" style="padding-bottom: 40px;">
+            <div class="container">
+                <div class="grid grid-3col items-center gap-4 animate-on-scroll" style="background:#fff; border:1px solid var(--border-color); border-radius:var(--radius-md); padding:30px; box-shadow:var(--shadow-sm);">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--font-heading); color: var(--text-dark); line-height: 1;">4.9</div>
+                        <div class="testimonial-rating" style="font-size: 1.2rem; margin: 8px 0;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Based on 1,280+ Verified Ratings</div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; align-items: center; gap: 10px; font-size: 0.8rem;">
+                            <span>5 Star</span>
+                            <div style="flex-grow: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 92%; height: 100%; background: #00E676;"></div>
+                            </div>
+                            <span>92%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; font-size: 0.8rem;">
+                            <span>4 Star</span>
+                            <div style="flex-grow: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 7%; height: 100%; background: #2979FF;"></div>
+                            </div>
+                            <span>7%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; font-size: 0.8rem;">
+                            <span>3 Star</span>
+                            <div style="flex-grow: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 1%; height: 100%; background: #FFB300;"></div>
+                            </div>
+                            <span>1%</span>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary btn-lg" id="openReviewModalBtn">
+                            <i class="fa-solid fa-pen-to-square"></i> Write a Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Reviews Grid -->
+        <section class="section-padding bg-light" style="padding-top: 50px;">
+            <div class="container">
+                <div class="grid grid-3col gap-4 animate-on-scroll" id="allReviewsGrid">
+                    <!-- Review 1 -->
+                    <div class="testimonial-slide" style="background:#fff; border-radius:var(--radius-md); padding:30px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote mb-4">"GS Security Solutions installed a full 8-camera setup at our logistics warehouse in Nashik. The clarity of the 4K feeds and the automated night intrusion alert is incredible. Umesh's team was highly professional and finished neatly in a single day!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="author-info">
+                                <div class="author-name">Rajesh Patil</div>
+                                <div class="author-title">Operations Director, Patil Logistics</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-slide" style="background:#fff; border-radius:var(--radius-md); padding:30px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote mb-4">"We installed the smart home wireless camera package. Now my husband and I can easily monitor our children playing in the backyard using the GS App. Setting it up on both our phones took less than 2 minutes and there are zero messy wires!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-large"></i></div>
+                            <div class="author-info">
+                                <div class="author-name">Meera Joshi</div>
+                                <div class="author-title">Homeowner, Gangapur Road, Nashik</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-slide" style="background:#fff; border-radius:var(--radius-md); padding:30px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="testimonial-quote mb-4">"Their annual maintenance package is fantastic. Whenever there's an issue with a camera angle or video needs archiving, their customer support responds instantly. The NVR storage is huge, giving us complete peace of mind."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-ninja"></i></div>
+                            <div class="author-info">
+                                <div class="author-name">Suresh Deshmukh</div>
+                                <div class="author-title">Store Owner, Deshmukh Sweets</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="testimonial-slide" style="background:#fff; border-radius:var(--radius-md); padding:30px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote mb-4">"We run a 24-hour pharmaceutical storage unit. GS Security set up thermal and motion tracking cameras with automatic sirens. Their team's technical knowledge and Umesh Bhavsar's personal guarantee made all the difference."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                            <div class="author-info">
+                                <div class="author-name">Dr. Vikram Kulkarni</div>
+                                <div class="author-title">Director, Kulkarni Pharma Labs</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="testimonial-slide" style="background:#fff; border-radius:var(--radius-md); padding:30px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote mb-4">"Very clean installation. Conduits were neatly concealed behind moldings so our interior design was untouched. The mobile app interface is super fluid and the two-way speaker works like a charm for parcel deliveries."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+                            <div class="author-info">
+                                <div class="author-name">Pooja Sharma</div>
+                                <div class="author-title">Villa Resident, Nashik</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="testimonial-slide" style="background:#fff; border-radius:var(--radius-md); padding:30px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <div class="testimonial-rating mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote mb-4">"We manage a residential gated society of 120 flats. GS Security planned 32 IP cameras covering all gates, parking basements, and lifts. Their AMC response time is under 4 hours whenever needed!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-building-user"></i></div>
+                            <div class="author-info">
+                                <div class="author-name">Amitabh Gokhale</div>
+                                <div class="author-title">Society Secretary, Green Acres CHS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Interactive Review Modal -->
+    <div class="modal-overlay" id="reviewModalOverlay">
+        <div class="review-modal-box">
+            <button class="modal-close-btn" id="closeReviewModalBtn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <h3 style="font-size: 1.4rem; margin-bottom: 6px;">Share Your GS Security Experience</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">Your feedback helps us continuously elevate our surveillance quality.</p>
+            
+            <form id="reviewForm">
+                <div class="form-group mb-3">
+                    <label style="font-size: 0.85rem; font-weight: 600;">Overall Rating *</label>
+                    <div class="star-rating-select" id="starRatingSelect">
+                        <i class="fa-solid fa-star active" data-star="1"></i>
+                        <i class="fa-solid fa-star active" data-star="2"></i>
+                        <i class="fa-solid fa-star active" data-star="3"></i>
+                        <i class="fa-solid fa-star active" data-star="4"></i>
+                        <i class="fa-solid fa-star active" data-star="5"></i>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="r_name" style="font-size: 0.85rem; font-weight: 600;">Full Name *</label>
+                    <input type="text" id="r_name" required placeholder="e.g. Ramesh Kulkarni" style="width:100%; padding:10px 14px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="r_role" style="font-size: 0.85rem; font-weight: 600;">Designation / Location</label>
+                    <input type="text" id="r_role" placeholder="e.g. Homeowner, Nashik" style="width:100%; padding:10px 14px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="r_comment" style="font-size: 0.85rem; font-weight: 600;">Your Review *</label>
+                    <textarea id="r_comment" required rows="4" placeholder="Tell us about the installation, app performance, and support..." style="width:100%; padding:10px 14px; border:1px solid var(--border-color); border-radius:var(--radius-sm);"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-solid fa-paper-plane"></i> Submit Verified Review
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="../index.html" class="logo mb-4">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span class="logo-text">GS <span class="text-red">SECURITY</span></span>
+                </a>
+                <p class="footer-text">Premium CCTV surveillance systems, custom security setups, wireless monitoring devices, and enterprise-grade hardware installations. Founded by Umesh Suresh Bhavsar.</p>
+                <div class="social-icons">
+                    <a href="#social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#social" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Pages</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Company</a></li>
+                    <li><a href="founder.html">Our Founder</a></li>
+                    <li><a href="services.html">Services & Packages</a></li>
+                    <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Our Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">CCTV Camera Installation</a></li>
+                    <li><a href="services.html">Wireless CCTV Systems</a></li>
+                    <li><a href="services.html">Home Security Solutions</a></li>
+                    <li><a href="services.html">Business Surveillance</a></li>
+                    <li><a href="services.html">DVR & NVR Calibration</a></li>
+                    <li><a href="services.html">Maintenance & AMC Contracts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">GS Mobile App</h4>
+                <p class="footer-text mb-3">Download the GS Mobile App to access live surveillance dashboards, trigger security alerts, and track support tickets directly.</p>
+                <a href="gs-app.html" class="btn btn-primary btn-sm btn-block">
+                    <i class="fa-solid fa-download"></i> Download GS App
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">Copyright &copy; 2026 GS Security Solutions. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#terms">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Live Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle-btn" id="chatToggleBtn" aria-label="Open chat support">
+            <i class="fa-solid fa-comments comment-icon"></i>
+            <i class="fa-solid fa-xmark close-icon"></i>
+            <span class="chat-notification-badge" id="chatBadge">1</span>
+        </button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-box-header">
+                <div class="cb-avatar"><i class="fa-solid fa-headset"></i></div>
+                <div class="cb-info">
+                    <div class="cb-name">GS Security Assistant</div>
+                    <div class="cb-status"><span class="chat-green-dot"></span> Online (We respond instantly)</div>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message msg-bot">
+                    Hello! Welcome to our customer reviews page. Have questions about our service quality or want to hear more references?
+                </div>
+            </div>
+            <div class="chat-quick-replies" id="chatQuickReplies">
+                <button class="qr-btn" data-reply="CCTV Installation Pricing">CCTV Installation Pricing</button>
+                <button class="qr-btn" data-reply="Talk to Umesh Bhavsar">Talk to Umesh Bhavsar</button>
+                <button class="qr-btn" data-reply="Download the GS App">Download the GS App</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="chatSendBtn" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="../app.js"></script>
+</body>
+</html>
